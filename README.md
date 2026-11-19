@@ -17,7 +17,9 @@ Enter the code for admin.py and models.py
 Execute Django admin and create details for 10 cars
 
 # PROGRAM
-admin.py
+
+**admin.py**
+```python
 from django.contrib import admin
 from .models import Foodorder
 
@@ -25,10 +27,10 @@ class FoodorderAdmin(admin.ModelAdmin):
     list_display = ('name', 'fooditem', 'quantity', 'mobno', 'email')
 
 admin.site.register(Foodorder, FoodorderAdmin)
+```
 
-models.py
-from django.db import models
-
+**models.py**
+```python
 from django.db import models
 
 class Foodorder(models.Model):
@@ -40,7 +42,7 @@ class Foodorder(models.Model):
 
     def __str__(self):
         return self.name
-
+```
 # OUTPUT
 <img width="1912" height="908" alt="image" src="https://github.com/user-attachments/assets/cbc858c9-e54d-4694-ab14-ae913de92049" />
 
