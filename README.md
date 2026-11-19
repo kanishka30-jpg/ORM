@@ -43,6 +43,15 @@ class Foodorder(models.Model):
     def __str__(self):
         return self.name
 ```
+**urls.py**
+```
+from django.contrib import admin
+from django.urls import path
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+]
+```
 # OUTPUT
 <img width="1912" height="908" alt="image" src="https://github.com/user-attachments/assets/cbc858c9-e54d-4694-ab14-ae913de92049" />
 
